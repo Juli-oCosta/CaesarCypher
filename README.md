@@ -34,6 +34,4 @@ Execute o script Python em seu terminal: Bash python main.py
 
 - O programa em seu estado atual possui algumas limitações que abrem portas para melhorias futuras:
 
-- Caracteres Limitados: O script atualmente só funciona com letras minúsculas do alfabeto (a-z). Ele irá gerar um erro se a mensagem contiver espaços, números, pontuação ou letras maiúsculas.
-
-- Melhoria Sugerida: Implementar uma verificação dentro do loop para identificar se um caractere pertence ao alfabeto. Se não pertencer, ele deve ser mantido no texto final sem alterações.
+- Não há ainda uma validação para o quão correto é o input do usuário, tendo ele a liberdade de escrever qualquer coisa e isso cair no estado do else.
