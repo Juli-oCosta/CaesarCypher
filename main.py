@@ -20,29 +20,29 @@ print(logo)
 
 alphabet = list(map(chr, range(97, 123)))
 
-over = False
-
-while not over:
-
-  direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-  text = input("Type in your message:\n").lower()
-  shift = int(input("Type the shift number:\n"))
-
-  def caesarCypher(original_text, shift_amount, encode_or_decode):
+def caesarCypher(original_text, shift_amount, encode_or_decode):
     rearranged_text = []
 
     if encode_or_decode == "decode":
       shift_amount *= -1 # Invert to decode
 
     for letter in original_text:
-      position = alphabet.index(letter)
-      new_position = (position + shift_amount) % 26 # Prevents it from being out of index
-      new_letter = alphabet[new_position]
+      if letter not in alphabet:
+        rearranged_text.append(letter)
+      else:
+        position = alphabet.index(letter)
+        new_position = (position + shift_amount) % 26 # Prevents it from being left out of index
+        new_letter = alphabet[new_position]
 
-      rearranged_text.append(new_letter)
+        rearranged_text.append(new_letter)
     
     print(f"Here's the {encode_or_decode}d result:", *rearranged_text)
 
+over = False
+while not over:
+  direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+  text = input("Type in your message:\n").lower()
+  shift = int(input("Type the shift number:\n"))
 
   caesarCypher(original_text=text, shift_amount = shift, encode_or_decode=direction)
 
