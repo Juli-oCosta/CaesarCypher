@@ -22,7 +22,7 @@ print(logo)
 alphabet = list(map(chr, range(97, 123)))
 
 def caesarCypher(original_text, shift_amount, encode_or_decode):
-  # Initializes an empty list to store the resulting text.
+    # Initializes an empty list to store the resulting text.
     rearranged_text = []
 
     # For decryption, simpli invert the siign of the shift amount
