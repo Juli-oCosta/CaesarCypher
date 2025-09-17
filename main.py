@@ -54,7 +54,7 @@ while not over:
       shift = int(input("Type the shift number:\n"))
       break
     except ValueError:
-      print("Invalid option. Please, type only 'encode' or 'decode'.")
+      print("Invalid option. Please, type only an integer number.")
 
   caesarCypher(original_text=text, shift_amount = shift, encode_or_decode=direction)
 
@@ -67,4 +67,4 @@ while not over:
     elif restart == "yes":
       break
     else:
-      print("Invalid option. Please, type only an integer number.")
+      print("Invalid option. Please, type only 'yes' or 'no'.")
