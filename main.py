@@ -25,7 +25,7 @@ def caesarCypher(original_text, shift_amount, encode_or_decode):
     # Initializes an empty list to store the resulting text.
     rearranged_text = []
 
-    # For decryption, simpli invert the siign of the shift amount
+    # For decryption, simply invert the siign of the shift amount
     if encode_or_decode == "decode":
       shift_amount *= -1
 
