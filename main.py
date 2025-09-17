@@ -59,7 +59,6 @@ while not over:
       print("Goodbye!")
       break
     elif restart == "yes":
-      over = False
       break
     else:
       print("Invalid option. Please, type only 'yes' or 'no'.")
