@@ -27,11 +27,3 @@ Execute o script Python em seu terminal: Bash python main.py
 - O resultado será exibido na tela.
 
 - Você será perguntado se deseja executar o programa novamente. Digite yes para continuar ou no para sair.
-
----
-
-⚠️ Limitações e Melhorias Futuras
-
-- O programa em seu estado atual possui algumas limitações que abrem portas para melhorias futuras:
-
-- Não há ainda uma validação para o quão correto é o input do usuário, tendo ele a liberdade de escrever qualquer coisa e isso cair no estado do else.
